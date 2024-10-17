@@ -6,12 +6,10 @@ const canvas = document.getElementById('canvas');
 const photoTitle = document.getElementById('photoTitle');
 const confirmButton = document.getElementById('confirmButton');
 const captureButton = document.getElementById('captureButton');
-let capturedImage = null; // Almacenar la imagen capturada
+let capturedImage = null;
 
-// URL de tu endpoint de MockAPI.io
 const mockApiUrl = 'https://67103452a85f4164ef2d58a1.mockapi.io/photoApi/photos';
 
-// Crear el input file dinámicamente para usar la cámara en móviles
 const inputFile = document.createElement('input');
 inputFile.type = 'file';
 inputFile.accept = 'image/*';
@@ -19,12 +17,11 @@ inputFile.capture = 'camera';
 
 const supportsCameraAPI = 'mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices;
 
-// Función para iniciar la cámara en dispositivos con soporte (computadoras)
 function startCamera() {
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             cameraView.srcObject = stream;
-            cameraView.style.display = 'block'; // Mostrar el video de la cámara
+            cameraView.style.display = 'block';
         })
         .catch(error => {
             console.error('Error accessing the camera', error);
@@ -32,7 +29,6 @@ function startCamera() {
         });
 }
 
-// Función para capturar imagen desde el video (computadoras)
 function captureFromCamera() {
     const context = canvas.getContext('2d');
     canvas.width = cameraView.videoWidth;
