@@ -116,5 +116,5 @@ confirmButton.addEventListener('click', async(event) => {
 
 cancelButton.addEventListener('click', (event) => {
     event.preventDefault();
-    window.location.href = '../index.html';
+    window.location.href = '/photoFeedApp/index.html';
 });

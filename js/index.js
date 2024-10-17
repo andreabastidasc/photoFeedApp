@@ -35,5 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('openCamera').addEventListener('click', () => {
-    window.location.href = '/views/camara.html';
+    window.location.href = '/photoFeedApp/views/camara.html';
 });
