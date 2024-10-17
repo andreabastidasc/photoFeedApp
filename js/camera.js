@@ -41,6 +41,19 @@ function captureFromCamera() {
     cameraView.style.display = 'none';
 }
 
+function updateButtonState() {
+    if (navigator.onLine) {
+        confirmButton.disabled = false;
+    } else {
+        confirmButton.disabled = true;
+    }
+}
+
+updateButtonState()
+
+window.addEventListener('online', updateButtonState);
+window.addEventListener('offline', updateButtonState);
+
 preview.addEventListener('dblclick', () => {
     if (supportsCameraAPI) {
         startCamera();

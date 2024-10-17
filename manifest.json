@@ -9,22 +9,22 @@
     "orientation": "portrait",
     "icons": [
         {
-            "src": "/assets/img/camera-icon512x512.png",
+            "src": "/photoFeedApp/assets/img/camera-icon512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "/assets/img/camera-icon192x192.png",
+            "src": "/photoFeedApp/assets/img/camera-icon192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/assets/img/camera-icon144x144.png",
+            "src": "/photoFeedApp/assets/img/camera-icon144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/assets/img/camera-icon64x64.png",
+            "src": "/photoFeedApp/assets/img/camera-icon64x64.png",
             "sizes": "64x64",
             "type": "image/png"
         }
