@@ -27,7 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://67103452a85f4164ef2d58a1.mockapi.io/photoApi/photos')
         .then(response => response.json())
         .then(data => {
-            container.innerHTML = ''; 
-            createCards(data)
+            if (data.length > 0) {
+                container.innerHTML = ''; 
+                createCards(data)
+            }     
         });
+});
+
+document.getElementById('openCamera').addEventListener('click', () => {
+    window.location.href = '../views/camara.html';
 });
