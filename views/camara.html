@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Image</title>
+    <link rel="manifest" href="../manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Take a Photo</h1>
+    </header>
+    
+    <main>
+        <div class="camera-container">
+            <video id="cameraView" autoplay></video> <!-- Video stream will show here -->
+            <canvas id="canvas" style="display:none;"></canvas> <!-- Hidden canvas for image processing -->
+            <img id="preview" src="default.jpg" alt="Captured Image" /> <!-- Image preview -->
+        </div>
+
+        <input type="text" id="photoTitle" placeholder="Add a title">
+        
+        <div>
+            <button id="captureButton">Capture</button>
+            <button id="confirmButton">Confirm</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+    </main>
+
+    <script src="../js/camera.js"></script> <!-- Link to your JS for handling camera and image upload -->
+</body>
+</html>
