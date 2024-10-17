@@ -2,7 +2,7 @@
     "name": "PhotoFeed App",
     "short_name": "PhotoFeed",
     "scope": "/",
-    "start_url": "/index.html",
+    "start_url": "https://andreabastidasc.github.io/photoFeedApp/index.html",
     "theme_color": "#cfe2ff",
     "background_color": "#cfe2ff",
     "display": "standalone",
